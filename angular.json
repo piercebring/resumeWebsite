@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "webResume"
+    }
+  },
+  "defaultProject": "webResume",
+  "cli": {
+    "analytics": "4a641469-2c23-49a6-9da6-127c6551525c"
+  }
 }

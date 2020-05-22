@@ -1,0 +1,18 @@
+
+    <form class="contact-form email-form" (submit)="sendEmail($event)">
+        <h3>Contact</h3>
+        <div class="form-row mb-3">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Name" name="from_name">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Email" name="sender_email">
+          </div>
+        </div>
+        <textarea name="message_html" class="form-control"></textarea>
+        <div class="form-row mb-3">
+            <div class="col">
+                <button class="btn btn-outline-dark btn-lg " type="submit" value="Send">Send</button>
+            </div>
+        </div>
+      </form>
