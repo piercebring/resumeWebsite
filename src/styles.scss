@@ -1,11 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+.bg-light {
+    background-color: white !important;
+    border-bottom: 1px solid #7C8884;
+}
 
 h1 {
-    color: #343A40;
+    color: #7C8884;
     font-family: 'IBM Plex Sans', sans-serif;
 }
 h3 {
-    color: #343A40;
+    color: #7C8884;
     font-family: 'IBM Plex Sans', sans-serif;
 }
 .btn {

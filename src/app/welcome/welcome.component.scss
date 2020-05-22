@@ -3,18 +3,11 @@
     //height: 150vh;
     padding-right: 0px;
     padding-left: 0px;
-    padding-top: 10px;
-    height: 150vw;
-}
-
-.second-container {
-    height: 150vw;
-    background-color: #FFFBDB;
-    padding-right: 0px;
-    padding-left: 0px;
+    //padding-top: 10px;
+    height: 100%;
 }
 p {
-    color: #343A40;
+    color: #28464B;
     font-family: 'IBM Plex Sans', sans-serif;
 }
 
@@ -24,10 +17,9 @@ p {
     //margin: 60px 0 40px 0;
     padding: 20px 20px 20px 20px;
     //max-width: 60%;
-    margin-top: 20px;
-    font-size: 1.5vw;
+    font-size: 2.3vw;
     font-family: 'IBM Plex Sans', sans-serif;
-    background-color: #F4F5F6;
+    background-color: #CEE0DC;
     //position: relative;
     //right:0;
     border-radius: 20px 0px 0px 20px;
@@ -40,13 +32,37 @@ app-email {
     background-color: #F4F5F6;
     border-radius: 20px;
 }
-#contact-row {
-    height: 50vh;
+
+#bio-row {
+    height: 100vh;
 }
-
-#bio-hr {
-    max-width: 85vh;
-
+#bio-pic {
+    height: 100vh;
+    background-color:#CEE0DC;
+}
+#contact-row {
+    height: 100vh;
+}
+#download-row {
+    height: 100vh;
+    background-color: #CEE0DC;
+}
+#resumeButton {
+    align-content: center;
+    transition: transform .4s; /* Animation */
+}
+#resumeButton:hover {
+    transform: scale(1.5);
+    cursor:pointer;
+}
+#buttonHolder {
+    width: 50%;
+}
+#bio-nav {
+    background-color: #CEE0DC !important;
+}
+#contact-nav {
+    background-color: #CEE0DC !important;
 }
 
 #section2 {

@@ -1,5 +1,22 @@
-<!-- As a heading -->
-<nav class="navbar navbar-light bg-light">
-  <span class="navbar-brand mb-0 h1">Pierce Bringhurst</span>
+
+<nav class="navbar sticky-top navbar-light bg-light" id="navboi">
+  <span class="navbar-brand mb-0 h1" id="title">Pierce Bringhurst</span>
 </nav>
+
+<ul class="nav flex-column" id="sidebar">
+  <li class="nav-item">
+    <button class="btn btn-outline-dark btn-sm" (click)="scrollToPhoto($event)">Photo</button>
+  </li>
+  <li class="nav-item">
+    <button class="btn btn-outline-dark btn-sm" (click)="scrollToBio($event)">Bio</button>
+  </li>
+  <li class="nav-item">
+    <button class="btn btn-outline-dark btn-sm" (click)="scrollToResume($event)">Resume</button>
+  </li>
+  <li class="nav-item">
+    <button class="btn btn-outline-dark btn-sm" (click)="scrollToContact($event)">Contact</button>
+  </li>
+</ul>
+
+
 <router-outlet></router-outlet>

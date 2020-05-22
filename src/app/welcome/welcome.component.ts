@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Renderer2, ElementRef, ViewChild } from '@angular/core';
 
 
 
@@ -15,13 +15,17 @@ export class WelcomeComponent implements OnInit {
 
 
 
-  constructor() { }
+  constructor(private renderer: Renderer2, private el: ElementRef) { }
+  @ViewChild("icon") icon: ElementRef;
 
 
-downloadPdf() {
+  downloadPdf() {
     const pdfUrl = './assets/Resume3.pdf';
     const pdfName = 'resume';
     FileSaver.saveAs(pdfUrl, pdfName);
+  }
+  hoverResume() {
+     this.renderer.se
   }
   
 

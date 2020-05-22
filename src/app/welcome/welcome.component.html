@@ -1,41 +1,51 @@
+
 <div class="first-container container-fluid">
-    <div id="bio-pic" class="row no-gutters">
+    <div id="bio-pic" class="row no-gutters align-items-center">
         <div id="bio-pic-img" class="col-4">
-            <img id="headshot" class="img-fluid" alt="Responsive image" src="https://headshots.thelightcommittee.com/wp-content/uploads/2019/04/RJ_Headshots-84-web.jpg">
+            <img id="headshot" class="img-fluid" alt="Responsive image" src="../../assets/headshot (3).jpg">
         </div>
         <div class="col-8">
         </div>
     </div>
-    <div class="row no-gutters">
-        <div class="col-4">
+    <nav class="navbar sticky-top navbar-light bg-light" id="bio-nav">
+        <span class="navbar-brand mb-0 h1">Bio</span>
+    </nav>
+    <div class="row no-gutters align-items-center" id="bio-row">
+        <div class="col-2">
 
         </div>
-        <div class="col-8">
+        <div class="col-10">
             <p id="bio">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Gravida in fermentum et sollicitudin ac orci phasellus. Amet venenatis urna cursus eget nunc. Habitasse platea dictumst vestibulum rhoncus est pellentesque elit. Felis eget velit aliquet sagittis id. Interdum velit euismod in pellentesque. Senectus et netus et malesuada fames ac. Dolor sed viverra ipsum nunc. Bibendum at varius vel pharetra. Et malesuada fames ac turpis egestas maecenas. Hac habitasse platea dictumst quisque. Lacus sed viverra tellus in hac habitasse. Eget sit amet tellus cras adipiscing enim. Dui ut ornare lectus sit amet est. Nullam vehicula ipsum a arcu cursus vitae congue. Senectus et netus et malesuada fames. Enim tortor at auctor urna nunc id cursus. Enim ut sem viverra aliquet eget sit amet.
             </p>
         </div>
-
     </div>
-        <div class="row no-gutters" id="contact-row">
-            <div class="col-3">
-                <div class="btn-group" role="group">
-                    <button type="button" class="btn btn-outline-dark" (click)="downloadPdf()">
+    <nav class="navbar sticky-top navbar-light bg-light">
+        <span class="navbar-brand mb-0 h1">Resume</span>
+    </nav>
+        <div class="row no-gutters" id="download-row">
+            <div class="col-3"></div>
+            <div class="col-6 align-self-center text-center">
+                <i #icon class="far fa-file fa-10x" (click)="downloadPdf()" (mouseover)="hoverResume()" id="resumeButton"></i>
+                <!--
+                    <button id="resumeButton"type="button" class="btn btn-outline-dark btn-block" (click)="downloadPdf()">
                         Download my Resume</button>
-                </div>
+                -->
+                
             </div>
-            <div class="col-1">
-
-            </div>
-            <div class="col-7">
-                <app-email></app-email>    
-            </div>
-            <div class="col-1"></div>
+            <div class="col-3"></div>
         </div>
-        <hr id="bio-hr">
-</div>
-
-<div class="second-container container-fluid">
-
+        <nav class="navbar sticky-top navbar-light bg-light" id="contact-nav">
+            <span class="navbar-brand mb-0 h1">Contact Me</span>
+        </nav>
+        <div class="row no-gutters align-items-center" id="contact-row">
+            <div class="col-2">
+            </div>
+            <div class="col-8">
+                <app-email></app-email>
+            </div>
+            <div class="col-2">
+            </div>
+        </div>
 </div>
 
