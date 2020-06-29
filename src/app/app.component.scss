@@ -2,14 +2,26 @@
     background-color: white !important;
     border-bottom: 1px solid #7C8884;
 }
+#navboi {
+    //background-color: #CEE0DC !important;
+    background-color: #F4F5F6 !important;
+
+}
 
 
 #aboveNavbar {
     height: 400px;
 }
 
+
+#outer-container {
+    //border: 1px solid #7C8884;
+    //background-color:#CEE0DC;
+
+}
+
 #sidebar {
-    right: 0;
+    left: 1179px;
     position: fixed;
     z-index: 1000000;
     background-color: white !important;
