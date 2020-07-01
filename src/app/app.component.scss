@@ -23,6 +23,9 @@
 #sidebar-container {
     float: right;
     margin-right: 99px;
+    @media only screen and (max-width: 750px) {
+        visibility: hidden;
+      }
 }
 
 #sidebar {
