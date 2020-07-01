@@ -22,16 +22,18 @@
 
 #sidebar-container {
     float: right;
-    margin-right: 88px;
+    margin-right: 99px;
 }
 
 #sidebar {
     //float: right !important;
     position: fixed;
     z-index: 1000000;
-    background-color:#F4F5F6 !important;
-    border-radius: 0 0 0 20px;
-    border: 1px solid #7C8884;
+    background-color: transparent;
+    //border-radius: 0 20px 20px 0;
+    //border: 1px solid #7C8884;
+    //border-left: 0px;
+
 }
 
 
