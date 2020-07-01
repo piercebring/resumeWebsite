@@ -20,8 +20,13 @@
 
 }
 
+#sidebar-container {
+    float: right;
+    margin-right: 88px;
+}
+
 #sidebar {
-    left: 1179px;
+    //float: right !important;
     position: fixed;
     z-index: 1000000;
     background-color:#F4F5F6 !important;

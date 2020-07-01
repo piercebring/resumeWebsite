@@ -16,6 +16,9 @@ ul {
     color: #28464B;
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 1vw;
+    @media only screen and (max-width: 750px) {
+        font-size: 2vw !important;
+      }
     font-family: 'IBM Plex Sans', sans-serif;
     background-color: #CEE0DC !important;
     border-radius: 20px 0px 0px 20px;
@@ -30,7 +33,10 @@ ul {
     //margin: 60px 0 40px 0;
     padding: 20px 20px 20px 20px;
     //max-width: 60%;
-    font-size: 2.1vw;
+    font-size: 2vw;
+    @media only screen and (max-width: 750px) {
+        font-size: 3vw !important;
+      }
     font-family: 'IBM Plex Sans', sans-serif;
     background-color: #CEE0DC !important;
     //position: relative;
@@ -54,6 +60,7 @@ app-email {
 #bio-pic {
     height: 100vh;
     background-color: #F4F5F6 !important;
+    overflow: auto;
 
     //background-color:#CEE0DC;
 }
