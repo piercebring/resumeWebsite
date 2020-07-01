@@ -5,10 +5,39 @@
         <div id="bio-pic-img" class="col-4">
             <img id="headshot" class="img-fluid" alt="Responsive image" src="../../assets/headshot (3).jpg">
         </div>
-        <div class="col-8">
+        <div class="col-1">
+
+        </div>
+        <div class="col-7">
+            <p id="bio">
+                My name is Pierce Bringhurst. 
+                I’m a junior double majoring in Computer Science and French at the University of Utah. 
+                I expect to graduate in December of 2021. I built this website using HTML, CSS, Bootstrap, and Angular, and hosted it using Amazon Web Services. Here are some other skills I have:
+            </p>
+            <ul>
+                <li>
+                    Languages: C#, Java, C++, Python, Javascript, SQL
+                </li>
+                <li>
+                    Webwork: JQuery, AJAX, ASP.NET Core, Entity Framework, Selenium, LINQ
+                </li>
+            </ul>
+            <ul>
+                <li>Relevant Coursework: Web Software Architecture,
+                    Software Practice II, 
+                    &nbsp; &nbsp; &nbsp; Software Practice I,
+                    Computer Organization,
+                    Discrete Math,
+                    Data Structures and Algorithms,
+                    Algorithms,
+                    Database Systems,
+                    Computer Networking
+                    </li>
+            </ul>
         </div>
     </div>
-    <nav class="navbar sticky-top navbar-light bg-light" id="bio-nav">
+    <!--
+        <nav class="navbar sticky-top navbar-light bg-light" id="bio-nav">
         <span class="navbar-brand mb-0 h1">Bio</span>
     </nav>
     <div class="row no-gutters align-items-center" id="bio-row">
@@ -43,12 +72,15 @@
             </ul>
         </div>
     </div>
+    -->
+    
     <nav class="navbar sticky-top navbar-light bg-light" id="resume-nav">
         <span class="navbar-brand mb-0 h1">Resume</span>
     </nav>
         <div class="row no-gutters" id="download-row">
             <div class="col-3"></div>
             <div class="col-6 align-self-center text-center">
+                <p>Click the icon to download my resume!</p>
                 <i #icon class="far fa-file fa-10x" (click)="downloadPdf()" (mouseover)="hoverResume()" id="resumeButton"></i>
                 <!--
                     <button id="resumeButton"type="button" class="btn btn-outline-dark btn-block" (click)="downloadPdf()">

@@ -25,7 +25,7 @@ export class WelcomeComponent implements OnInit {
     FileSaver.saveAs(pdfUrl, pdfName);
   }
   hoverResume() {
-     //nothing
+     
   }
   
 
