@@ -22,6 +22,7 @@ export class AppComponent implements AfterViewInit {
   title = 'webResume';
 
   public scrollToPhoto(e: Event) {
+    
     window.scrollTo({
       top: 0,
       behavior: 'smooth'

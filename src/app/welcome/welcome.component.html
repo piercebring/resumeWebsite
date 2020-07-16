@@ -1,19 +1,17 @@
 
 
-<div class="first-container container-fluid">
+<div class="first-container container-fluid" (mouseenter)="slideElementsOnPage()">
     <div id="bio-pic" class="row no-gutters align-items-center">
         <div id="bio-pic-img" class="col-12 col-md-5 text-center">
-            <img id="headshot" class="img-fluid" alt="Responsive image" src="../../assets/headshot (3).jpg">
+            <img id="headshot" class="img-fluid" [ngClass]= "{'slideIn' : slideIn }" alt="Responsive image" src="../../assets/headshot (3).jpg">
         </div>
         <div class="col-1">
         </div>
         <div class="col-10 col-md-5">
-            <p id="bio">
-                My name is Pierce Bringhurst. 
-                I’m a junior double majoring in Computer Science and French at the University of Utah. 
-                I expect to graduate in December of 2021. I built this website using HTML, CSS, Bootstrap, and Angular, and hosted it using Amazon Web Services. Here are some other skills I have:
-            </p>
-            <ul>
+                <p id="bio" [ngClass]="{'slideIn' : slideIn }"(mouseenter)="slideOut()" >
+                    {{bioText}}
+                </p>
+            <ul id="firstUl" [ngClass]="{'slideIn' : slideIn }" >
                 <li>
                     Languages: C#, Java, C++, Python, Javascript, SQL
                 </li>
@@ -21,7 +19,7 @@
                     Webwork: JQuery, AJAX, ASP.NET Core, Entity Framework, Selenium, LINQ
                 </li>
             </ul>
-            <ul>
+            <ul id="secondUl" [ngClass]= "{'slideIn' : slideIn }">
                 <li>Relevant Coursework: Web Software Architecture,
                     Software Practice II, 
                     &nbsp; &nbsp; &nbsp; Software Practice I,
@@ -82,8 +80,8 @@
         <div class="row no-gutters" id="download-row">
             <div class="col-3"></div>
             <div class="col-6 align-self-center text-center">
-                <p>Click the icon to download my resume!</p>
-                <i #icon class="far fa-file fa-10x" (click)="downloadPdf()" (mouseover)="hoverResume()" id="resumeButton"></i>
+                <p id="download-message" [ngClass]= "{'font-change' : downloaded}">{{downloadResume}}</p>
+                <i #icon class="far fa-file fa-10x" [ngClass]="{'downloaded' : downloaded}"(click)="downloadPdf()" (mouseover)="hoverResume()" id="resumeButton"></i>
                 <!--
                     <button id="resumeButton"type="button" class="btn btn-outline-dark btn-block" (click)="downloadPdf()">
                         Download my Resume</button>

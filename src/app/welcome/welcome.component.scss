@@ -1,4 +1,55 @@
 
+.slide {
+    //background-color: green !important;
+    transform: rotate(360deg);
+    //border-radius: 50%;
+    left: 500px;
+    transition: all 0.5s ease-in-out;
+    //visibility: hidden !important;
+}
+
+.font-change {
+    font-size: 3em !important;
+}
+
+.slideIn {
+    //transition: all 5s ease-in-out;
+    transform: translateX(-100vw);
+}
+
+#firstUl {
+    position: relative;
+    left: 100vw !important;
+    transition-delay: .6s !important;
+    transition: transform 1.5s ease-in-out;
+}
+
+#secondUl {
+    position: relative;
+    left: 100vw !important;
+    transition-delay: 1.2s !important;
+    transition: transform 1.5s ease-in-out;
+}
+
+#download-message {
+    transition: font-size .6s ease-in-out;
+}
+
+
+.downloaded {
+    transition: transform .6s ease-in-out;
+    transform: translate(-70vw, 100vh) rotate(360deg);
+}
+
+
+.rotate {
+    transition: all 0.5s ease-in-out;
+  }
+  .rotate:hover {
+    transition: all 1s ease-in-out;
+  }
+
+
 .first-container {
     //height: 150vh;
     padding-right: 0px;
@@ -26,20 +77,19 @@ ul {
 }
 
 #bio {
-    //max-height: 100%;
-    //float:right;
-    //margin: 60px 0 40px 0;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
     padding: 20px 20px 20px 20px;
-    //max-width: 60%;
+    transition: transform 1.5s ease-in-out;
+    left: 100vw !important;
+    position: relative;
     font-size: 1.7vw;
     @media only screen and (max-width: 750px) {
         font-size: 3vw !important;
       }
     font-family: 'IBM Plex Sans', sans-serif;
     background-color: #CEE0DC !important;
-    //position: relative;
-    //right:0;
-    //border-radius: 20px 0px 0px 20px;
 
 }
 app-email {
@@ -59,6 +109,7 @@ app-email {
     height: 100vh;
     background-color: #F4F5F6 !important;
     overflow: auto;
+  
 
     //background-color:#CEE0DC;
 }
@@ -74,10 +125,11 @@ app-email {
 }
 #resumeButton {
     align-content: center;
-    transition: transform .4s; /* Animation */
+    //transition: transform .4s; /* Animation */
 }
 #resumeButton:hover {
-    transform: scale(1.5);
+    //transform: scale(1.5);
+    //transition: transform .4s;
     cursor:pointer;
 }
 #buttonHolder {
@@ -114,5 +166,9 @@ app-email {
     //make image flexible
     max-width: 100%;
     height: auto;
+    position: relative;
+    left: 100vw !important;
+    transition-delay: 1.8s !important;
+    transition: transform 1.5s ease-in-out;
     //width: auto\9; /* ie8 */
 }
