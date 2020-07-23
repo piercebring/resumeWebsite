@@ -4,7 +4,7 @@
     //margin: 20px;
     height: 60vh;
     //width: 100%;
-    background-color: #9DC5BB;
+    background-color: rgba(25,118,210, 1);
     //border-radius: 20px;
     overflow: hidden;
 }
@@ -14,4 +14,21 @@
 }
 textarea {
     height: 75%;
+}
+.btn-outline-dark:hover {
+    background-color: #1976d2;
+}
+.btn-outline-dark {
+    border-color: rgba(25,118,210, .5);
+    background-color: rgba(25,118,210, .5);
+    color: white;
+}
+
+btn-outline-dark.focus, .btn-outline-dark:focus {
+    box-shadow: 0 0 0 0.2rem rgba(25,118,210, .5);
+}
+
+.btn-outline-dark:not(:disabled):not(.disabled).active, .btn-outline-dark:not(:disabled):not(.disabled):active, .show>.btn-outline-dark.dropdown-toggle {
+    background-color: #1976d2;
+    border-color: #1976d2;
 }

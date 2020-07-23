@@ -31,14 +31,14 @@ export class AppComponent implements AfterViewInit {
 
   public scrollToBio(e: Event) {
     window.scrollTo({
-      top: 856,
+      top: document.body.clientHeight / 3,
       behavior: 'smooth'
     })
   }
 
    public scrollToResume(e: Event) {
     window.scrollTo({
-      top: 1700,
+      top: document.body.clientHeight,
       behavior: 'smooth'
     })
   }

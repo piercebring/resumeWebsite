@@ -36,6 +36,7 @@
 
 #download-message {
     transition: font-size .6s ease-in-out;
+    color: rgba(25,118,210, 1); 
 }
 
 
@@ -61,19 +62,19 @@
     height: 100%;
 }
 p {
-    color: #28464B;
+    color: white;
     font-family: 'IBM Plex Sans', sans-serif;
 }
 
 ul {
-    color: #28464B;
+    color: white;
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 1vw;
     @media only screen and (max-width: 750px) {
         font-size: 2vw !important;
       }
     font-family: 'IBM Plex Sans', sans-serif;
-    background-color: #9DC5BB !important;
+    background-color: rgba(25,118,210, 1)!important;
     //border-radius: 20px 0px 0px 20px;
     padding: 20px 20px 20px 40px;
 
@@ -92,25 +93,25 @@ ul {
         font-size: 3vw !important;
       }
     font-family: 'IBM Plex Sans', sans-serif;
-    background-color: #9DC5BB!important;
+    background-color: rgba(25,118,210, 1)!important;
 
 }
 app-email {
     //float: right;
     //width: 30%;
     height: 100%;
-    background-color: #F4F5F6;
+    background-color: white;
     border-radius: 20px;
 }
 
 #bio-row {
     height: 100vh;
-    background-color: #F4F5F6 !important;
+    background-color: white !important;
 
 }
 #bio-pic {
     height: 100vh;
-    background-color: #F4F5F6 !important;
+    background-color: white!important;
     overflow: auto;
   
 
@@ -118,12 +119,12 @@ app-email {
 }
 #contact-row {
     height: 100vh;
-    background-color: #F4F5F6 !important;
+    background-color: white!important;
 }
 #download-row {
     height: 100vh;
     //background-color: #CEE0DC;
-    background-color: #F4F5F6 !important;
+    background-color: white !important;
 
 }
 #resumeButton {
@@ -140,30 +141,35 @@ app-email {
 }
 
 .navbar .sticky-top .navbar-light .bg-light .ng-tns-c20-{
-    color: #082D0F !important;
+    color: white!important;
     font-size: 2em !important;
+    //background-color: rgba(25,118,210, .7) !important;
 }
 
 .navbar-light .navbar-brand {
-    color: #082D0F !important;
+    color: white !important;
     font-size: 2em !important;
+    //background-color: rgba(25,118,210, .7) !important;
 }
 
 #bio-nav {
     //background-color: #CEE0DC !important;
-    color: #082D0F !important;
+    color: white !important;
     font-size: 2em !important;
+    background-color: rgba(25,118,210, 1) !important;
 }  
 #resume-nav {
     //color: #082D0F !important;
     //font-size: 2em !important;
-    background-color: #F4F5F6 !important;
+    //background-color: #F4F5F6 !important;
+    background-color: rgba(25,118,210, 1) !important;
 }
 #contact-nav {
     //background-color: #CEE0DC !important;
     //color: #082D0F !important;
     //font-size: 2em !important;
-    background-color: #F4F5F6 !important;
+    //background-color: #F4F5F6 !important;
+    background-color: rgba(25,118,210, 1) !important;
 }
 
 

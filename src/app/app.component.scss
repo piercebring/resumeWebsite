@@ -4,16 +4,30 @@
 }
 #navboi {
     //background-color: #CEE0DC !important;
-    background-color: #F4F5F6 !important;
-    
+    background-color: #1976d2 !important;
+    height: 74px;
 
 }
-
 .navbar-light .navbar-brand {
-    color: #082D0F !important;
+    color: white !important;
     font-size: 2em !important;
 }
 
+.btn-outline-dark:hover {
+    background-color: #1976d2;
+}
+.btn-outline-dark {
+    border-color: #1976d2;
+    color: white;
+}
+btn-outline-dark.focus, .btn-outline-dark:focus {
+    box-shadow: 0 0 0 0.2rem rgba(25,118,210, .5);
+}
+
+.btn-outline-dark:not(:disabled):not(.disabled).active, .btn-outline-dark:not(:disabled):not(.disabled):active, .show>.btn-outline-dark.dropdown-toggle {
+    background-color: #1976d2;
+    border-color: #1976d2;
+}
 
 #aboveNavbar {
     height: 400px;
@@ -28,10 +42,22 @@
 
 #sidebar-container {
     float: right;
-    margin-right: 99px;
+    margin-right: 0;
     @media only screen and (max-width: 750px) {
         visibility: hidden;
       }
+}
+
+#bioButton {
+    height: 100px;
+}
+#resumeButton {
+    height: 100px;
+
+}
+#contactButton {
+    height: 100px;
+
 }
 
 #sidebar {
@@ -39,6 +65,8 @@
     position: fixed;
     z-index: 1000000;
     background-color: transparent;
+    margin-right: 0;
+    height: 400px;
     //border-radius: 0 20px 20px 0;
     //border: 1px solid #7C8884;
     //border-left: 0px;
