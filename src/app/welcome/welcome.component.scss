@@ -16,6 +16,9 @@
     //transition: all 5s ease-in-out;
     transform: translateX(-100vw);
 }
+.slideInFromLeft {
+    transform: translateX(100vw);
+}
 
 #firstUl {
     position: relative;
@@ -70,7 +73,7 @@ ul {
         font-size: 2vw !important;
       }
     font-family: 'IBM Plex Sans', sans-serif;
-    background-color: #CEE0DC !important;
+    background-color: #9DC5BB !important;
     //border-radius: 20px 0px 0px 20px;
     padding: 20px 20px 20px 40px;
 
@@ -89,7 +92,7 @@ ul {
         font-size: 3vw !important;
       }
     font-family: 'IBM Plex Sans', sans-serif;
-    background-color: #CEE0DC !important;
+    background-color: #9DC5BB!important;
 
 }
 app-email {
@@ -135,19 +138,35 @@ app-email {
 #buttonHolder {
     width: 50%;
 }
+
+.navbar .sticky-top .navbar-light .bg-light .ng-tns-c20-{
+    color: #082D0F !important;
+    font-size: 2em !important;
+}
+
+.navbar-light .navbar-brand {
+    color: #082D0F !important;
+    font-size: 2em !important;
+}
+
 #bio-nav {
     //background-color: #CEE0DC !important;
-    background-color: #F4F5F6 !important;
+    color: #082D0F !important;
+    font-size: 2em !important;
 }  
 #resume-nav {
+    //color: #082D0F !important;
+    //font-size: 2em !important;
     background-color: #F4F5F6 !important;
 }
 #contact-nav {
     //background-color: #CEE0DC !important;
+    //color: #082D0F !important;
+    //font-size: 2em !important;
     background-color: #F4F5F6 !important;
-
-
 }
+
+
 
 #section2 {
     display:inline-block;
@@ -167,7 +186,7 @@ app-email {
     max-width: 100%;
     height: auto;
     position: relative;
-    left: 100vw !important;
+    right: 100vw !important;
     transition-delay: 1.8s !important;
     transition: transform 1.5s ease-in-out;
     //width: auto\9; /* ie8 */
