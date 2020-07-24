@@ -1,11 +1,8 @@
 
 .slide {
-    //background-color: green !important;
     transform: rotate(360deg);
-    //border-radius: 50%;
     left: 500px;
     transition: all 0.5s ease-in-out;
-    //visibility: hidden !important;
 }
 
 .font-change {
@@ -13,7 +10,6 @@
 }
 
 .slideIn {
-    //transition: all 5s ease-in-out;
     transform: translateX(-100vw);
 }
 .slideInFromLeft {
@@ -49,17 +45,16 @@
 .rotate {
     transition: all 0.5s ease-in-out;
   }
-  .rotate:hover {
+.rotate:hover {
     transition: all 1s ease-in-out;
   }
 
 
 .first-container {
-    //height: 150vh;
     padding-right: 0px;
     padding-left: 0px;
-    //padding-top: 10px;
     height: 100%;
+
 }
 p {
     color: white;
@@ -74,14 +69,13 @@ ul {
         font-size: 2vw !important;
       }
     font-family: 'IBM Plex Sans', sans-serif;
-    background-color: rgba(25,118,210, 1)!important;
-    //border-radius: 20px 0px 0px 20px;
+    background-color: rgba(25,118,210, 1);
     padding: 20px 20px 20px 40px;
 
 }
 
 #bio {
-    text-align: center;
+    
     vertical-align: middle;
     width: 100%;
     padding: 20px 20px 20px 20px;
@@ -97,8 +91,6 @@ ul {
 
 }
 app-email {
-    //float: right;
-    //width: 30%;
     height: 100%;
     background-color: white;
     border-radius: 20px;
@@ -106,73 +98,52 @@ app-email {
 
 #bio-row {
     height: 100vh;
-    background-color: white !important;
+    background-color: white;
 
 }
 #bio-pic {
     height: 100vh;
-    background-color: white!important;
+    background-color: white;
     overflow: auto;
-  
-
-    //background-color:#CEE0DC;
 }
 #contact-row {
     height: 100vh;
-    background-color: white!important;
+    background-color: white;
 }
 #download-row {
     height: 100vh;
-    //background-color: #CEE0DC;
-    background-color: white !important;
+    background-color: white;
 
 }
 #resumeButton {
     align-content: center;
-    //transition: transform .4s; /* Animation */
 }
-#resumeButton:hover {
-    //transform: scale(1.5);
-    //transition: transform .4s;
-    cursor:pointer;
-}
+
 #buttonHolder {
     width: 50%;
 }
 
 .navbar .sticky-top .navbar-light .bg-light .ng-tns-c20-{
-    color: white!important;
-    font-size: 2em !important;
-    //background-color: rgba(25,118,210, .7) !important;
+    color: white;
+    font-size: 2em;
 }
 
 .navbar-light .navbar-brand {
-    color: white !important;
-    font-size: 2em !important;
-    //background-color: rgba(25,118,210, .7) !important;
+    color: white;
+    font-size: 2em;
 }
 
 #bio-nav {
-    //background-color: #CEE0DC !important;
-    color: white !important;
+    color: white;
     font-size: 2em !important;
     background-color: rgba(25,118,210, 1) !important;
 }  
 #resume-nav {
-    //color: #082D0F !important;
-    //font-size: 2em !important;
-    //background-color: #F4F5F6 !important;
     background-color: rgba(25,118,210, 1) !important;
 }
 #contact-nav {
-    //background-color: #CEE0DC !important;
-    //color: #082D0F !important;
-    //font-size: 2em !important;
-    //background-color: #F4F5F6 !important;
     background-color: rgba(25,118,210, 1) !important;
 }
-
-
 
 #section2 {
     display:inline-block;
@@ -184,16 +155,10 @@ app-email {
 
 //the img
 #headshot {
-    //padding-bottom: 40px;
-    //display: inline-block;
-    //round the corners
-    //border-radius: 0px 20px 20px 0px;
-    //make image flexible
     max-width: 100%;
     height: auto;
     position: relative;
     right: 100vw !important;
     transition-delay: 1.8s !important;
     transition: transform 1.5s ease-in-out;
-    //width: auto\9; /* ie8 */
 }

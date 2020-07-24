@@ -1,15 +1,17 @@
 
 
-<div class="first-container container-fluid" (mouseenter)="slideElementsOnPage()">
+<div class="first-container container-fluid" (onload)="slideElementsOnPage()">
     <div id="bio-pic" class="row no-gutters align-items-center">
         <div id="bio-pic-img" class="col-12 col-md-5 text-center">
-            <img id="headshot" class="img-fluid" [ngClass]= "{'slideInFromLeft' : slideIn }" alt="Responsive image" src="../../assets/headshot (3).jpg">
+            <img id="headshot" class="img-fluid" [ngClass]= "{'slideInFromLeft' : slideIn }" alt="Responsive image" src="../../assets/headshot (2).jpg">
         </div>
         <div class="col-1">
         </div>
         <div class="col-10 col-md-5">
                 <p id="bio" [ngClass]="{'slideIn' : slideIn }"(mouseenter)="slideOut()" >
-                    {{bioText}}
+                    My name is Pierce Bringhurst. I’m a junior double-majoring in Computer Science and French at the University of Utah.
+                    I expect to graduate in December of 2021. I built this website using HTML, CSS, Bootstrap,
+                    and Angular, and hosted it using Amazon Web Services. Here are some other skills I have:
                 </p>
             <ul id="firstUl" [ngClass]="{'slideIn' : slideIn }" >
                 <li>
@@ -22,7 +24,7 @@
             <ul id="secondUl" [ngClass]= "{'slideIn' : slideIn }">
                 <li>Relevant Coursework: Web Software Architecture,
                     Software Practice II, 
-                    &nbsp; &nbsp; &nbsp; Software Practice I,
+                    Software Practice I,
                     Computer Organization,
                     Discrete Math,
                     Data Structures and Algorithms,
@@ -36,44 +38,6 @@
 
         </div>
     </div>
-    <!--
-        <nav class="navbar sticky-top navbar-light bg-light" id="bio-nav">
-        <span class="navbar-brand mb-0 h1">Bio</span>
-    </nav>
-    <div class="row no-gutters align-items-center" id="bio-row">
-        <div class="col-2">
-
-        </div>
-        <div class="col-10">
-            <p id="bio">
-                My name is Pierce Bringhurst. 
-                I’m a junior double majoring in Computer Science and French at the University of Utah. 
-                I expect to graduate in December of 2021. I built this website using HTML, CSS, Bootstrap, and Angular, and hosted it using Amazon Web Services. Here are some other skills I have:
-            </p>
-            <ul>
-                <li>
-                    Languages: C#, Java, C++, Python, Javascript, SQL
-                </li>
-                <li>
-                    Webwork: JQuery, AJAX, ASP.NET Core, Entity Framework, Selenium, LINQ
-                </li>
-            </ul>
-            <ul>
-                <li>Relevant Coursework: Web Software Architecture,
-                    Software Practice II, 
-                    &nbsp; &nbsp; &nbsp; Software Practice I,
-                    Computer Organization,
-                    Discrete Math,
-                    Data Structures and Algorithms,
-                    Algorithms,
-                    Database Systems,
-                    Computer Networking
-                    </li>
-            </ul>
-        </div>
-    </div>
-    -->
-    
     <nav class="navbar sticky-top navbar-light bg-light" id="resume-nav">
         <span class="navbar-brand mb-0 h1">Resume</span>
     </nav>
@@ -82,11 +46,6 @@
             <div class="col-6 align-self-center text-center">
                 <p id="download-message" [ngClass]= "{'font-change' : downloaded}">{{downloadResume}}</p>
                 <i #icon class="far fa-file fa-10x" [ngClass]="{'downloaded' : downloaded}"(click)="downloadPdf()" (mouseover)="hoverResume()" id="resumeButton"></i>
-                <!--
-                    <button id="resumeButton"type="button" class="btn btn-outline-dark btn-block" (click)="downloadPdf()">
-                        Download my Resume</button>
-                -->
-                
             </div>
             <div class="col-3"></div>
         </div>
