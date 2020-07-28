@@ -21,7 +21,7 @@ textarea {
 }
 
 btn-outline-dark.focus, .btn-outline-dark:focus {
-    box-shadow: 0 0 0 0.2rem rgba(25,118,210, 1);
+    box-shadow: 0 0 0 0.2rem rgba(25,118,210, .5);
 }
 
 .btn-outline-dark:not(:disabled):not(.disabled).active, .btn-outline-dark:not(:disabled):not(.disabled):active, .show>.btn-outline-dark.dropdown-toggle {
