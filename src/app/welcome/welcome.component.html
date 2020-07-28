@@ -8,7 +8,7 @@
         <div class="col-1">
         </div>
         <div class="col-10 col-md-5">
-                <p id="bio" [ngClass]="{'slideIn' : slideIn }"" >
+                <p id="bio" [ngClass]="{'slideIn' : slideIn }" >
                     My name is Pierce Bringhurst. I’m a junior double-majoring in Computer Science and French at the University of Utah.
                     I expect to graduate in December of 2021. I built this website using HTML, CSS, Bootstrap,
                     and Angular, and hosted it using Amazon Web Services. Here are some other skills I have:
@@ -42,11 +42,17 @@
         <span class="navbar-brand mb-0 h1">Resume</span>
     </nav>
         <div class="row no-gutters" id="download-row">
-            <div class="col-3"></div>
+            
+                <div class="col-3"></div>
             <div class="col-6 align-self-center text-center">
-                <p id="download-message" [ngClass]= "{ 'font-change' : downloaded }"> {{ downloadResume }} </p>
+                <p id="download-message" [ngClass]= "{ 'font-change' : downloaded }"> {{downloadResume}} </p>
                 <i #icon class="far fa-file fa-10x" [ngClass]="{ 'downloaded' : downloaded }"(click)="downloadPdf()" id="resumeButton"></i>
             </div>
+
+
+
+            
+            
             <div class="col-3"></div>
         </div>
         <nav class="navbar sticky-top navbar-light bg-light" id="contact-nav">
