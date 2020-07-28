@@ -118,6 +118,9 @@ app-email {
 #resumeButton {
     align-content: center;
 }
+#resumeButton:hover {
+    cursor: pointer;
+}
 
 #buttonHolder {
     width: 50%;
