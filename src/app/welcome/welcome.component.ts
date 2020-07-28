@@ -1,12 +1,4 @@
 import { Component, OnInit, Renderer2, ElementRef, ViewChild } from '@angular/core';
-import {
-  trigger,
-  state,
-  style,
-  animate,
-  transition,
-} from '@angular/animations';
-import { AbsoluteSourceSpan } from '@angular/compiler';
 
 
 

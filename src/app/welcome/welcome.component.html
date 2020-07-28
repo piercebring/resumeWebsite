@@ -44,8 +44,8 @@
         <div class="row no-gutters" id="download-row">
             <div class="col-3"></div>
             <div class="col-6 align-self-center text-center">
-                <p id="download-message" [ngClass]= "{'font-change' : downloaded }">{{downloadResume}}</p>
-                <i #icon class="far fa-file fa-10x" [ngClass]="{'downloaded' : downloaded }"(click)="downloadPdf()" id="resumeButton"></i>
+                <p id="download-message" [ngClass]= "{ 'font-change' : downloaded }"> {{ downloadResume }} </p>
+                <i #icon class="far fa-file fa-10x" [ngClass]="{ 'downloaded' : downloaded }"(click)="downloadPdf()" id="resumeButton"></i>
             </div>
             <div class="col-3"></div>
         </div>

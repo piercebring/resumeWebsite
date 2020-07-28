@@ -1,4 +1,4 @@
-//import '@angular/compiler';
+import '@angular/compiler';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core'
 import { RouterModule } from '@angular/router'
@@ -6,7 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { EmailComponent } from './email/email.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+//import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -24,8 +24,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
       { path: 'welcome', component: WelcomeComponent },
       { path: '', redirectTo: 'welcome', pathMatch: 'full' },
       { path: '**', redirectTo: 'welcome', pathMatch: 'full'}
-    ]),
-    BrowserAnimationsModule
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]
